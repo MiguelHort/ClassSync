@@ -45,7 +45,7 @@ export default function Layout() {
                         <TableHead>Materia</TableHead>
                         <TableHead>Professor</TableHead>
                     </TableRow>
-                </TableHeader>
+                </TableHeader> 
                 <TableBody>
                     {rows.map((item) => (
                         <TableRow key={item.titulo}>
