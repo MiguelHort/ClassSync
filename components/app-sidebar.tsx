@@ -13,6 +13,8 @@ import {
 } from "@/components/ui/sidebar"
 
 import { ModeToggle } from "@/components/theme-button"
+import Link from "next/link"
+
 
 // Menu items.
 const items = [
@@ -27,8 +29,8 @@ const items = [
     icon: Inbox,
   },
   {
-    title: "Tarefas",
-    url: "/tarefas",
+    title: "Trabalhos",
+    url: "/trabalhos",
     icon: ListTodoIcon,
   },
 ]
@@ -44,10 +46,10 @@ export function AppSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <Link href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
