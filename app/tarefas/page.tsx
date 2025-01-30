@@ -14,7 +14,6 @@ export default function Layout() {
 
     <div className="flex justify-center items-center w-full h-full">    
         <Table>
-            <TableHeader>Tarefas Engenharia de Software</TableHeader>
             <TableHeader>
                 <TableRow>
                     <TableHead>Data Inicio</TableHead>
