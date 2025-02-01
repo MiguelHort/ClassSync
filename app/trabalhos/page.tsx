@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/card";
 import {
     Table,
     TableBody,
@@ -35,29 +36,31 @@ export default function Layout() {
     ];
 
     return (
-        <div className="flex justify-center items-center w-full h-full">
-            <Table>
-                <TableHeader>
-                    <TableRow>
-                        <TableHead>Titulo</TableHead>
-                        <TableHead>Data Inicio</TableHead>
-                        <TableHead>Data Termino</TableHead>
-                        <TableHead>Materia</TableHead>
-                        <TableHead>Professor</TableHead>
-                    </TableRow>
-                </TableHeader> 
-                <TableBody>
-                    {rows.map((item) => (
-                        <TableRow key={item.titulo}>
-                            <TableCell>{item.titulo}</TableCell>
-                            <TableCell>{item.dataini}</TableCell>
-                            <TableCell>{item.datafim}</TableCell>
-                            <TableCell>{item.materia}</TableCell>
-                            <TableCell>{item.professor}</TableCell>
+        <div className="grid">
+            <Card className="py-4 px-10">
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead>Titulo</TableHead>
+                            <TableHead>Data Inicio</TableHead>
+                            <TableHead>Data Termino</TableHead>
+                            <TableHead>Materia</TableHead>
+                            <TableHead>Professor</TableHead>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
+                    </TableHeader>
+                    <TableBody>
+                        {rows.map((item) => (
+                            <TableRow key={item.titulo}>
+                                <TableCell>{item.titulo}</TableCell>
+                                <TableCell>{item.dataini}</TableCell>
+                                <TableCell>{item.datafim}</TableCell>
+                                <TableCell>{item.materia}</TableCell>
+                                <TableCell>{item.professor}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </Card>
         </div>
 
 
