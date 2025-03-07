@@ -1,4 +1,4 @@
-import { Home, Inbox, ListTodoIcon, } from "lucide-react"
+import { Home, Car, ListTodoIcon, Wrench } from "lucide-react"
 
 import {
   Sidebar,
@@ -24,14 +24,19 @@ const items = [
     icon: Home,
   },
   {
-    title: "Calendário",
-    url: "/calendario",
-    icon: Inbox,
+    title: "Ficha",
+    url: "/ficha",
+    icon: ListTodoIcon,
   },
   {
-    title: "Trabalhos",
-    url: "/trabalhos",
-    icon: ListTodoIcon,
+    title: "Carros",
+    url: "/carros",
+    icon: Car,
+  },
+  {
+    title: "Peças",
+    url: "/pecas",
+    icon: Wrench,
   },
 ]
 

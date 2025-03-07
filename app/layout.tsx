@@ -33,7 +33,7 @@ export default function RootLayout({
             <SidebarProvider>
               <AppSidebar />
 
-              <main className="flex flex-col w-full h-screen overflow-hidden">
+              <main className="flex flex-col w-full h-svh overflow-y-hidden">
                 <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
                   <div className="flex items-center gap-2 px-4">
                     <SidebarTrigger />
@@ -42,7 +42,7 @@ export default function RootLayout({
                   </div>
                 </header>
 
-                <main className="flex flex-col p-4 pt-0">
+                <main className="flex flex-col h-svh overflow-y-auto">
                   {children}
                 </main>
               </main>
